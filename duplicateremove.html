@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function find_duplicate_characters(str) {
+		  var duplicate = '';
+		  for (var i = 0; i < str.length; i++) {
+		    if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+		      duplicate += str[i];
+		    }
+		  }
+		  return duplicate;
+		}
+
+		console.log(find_duplicate_characters('baraban'));
+		console.log(find_duplicate_characters('anaconda'));
+	</script>
+
+</body>
+</html>

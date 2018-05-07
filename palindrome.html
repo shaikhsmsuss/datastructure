@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var letters = [];
+
+		var word = "level"
+
+		var rword ="";
+
+		for(i=0; i<word.length; i++){
+			letters.push(word[i]);
+		}
+
+		for(i=0; i<word.length; i++){
+			rword += letters.pop();
+		}
+		if(rword===word){
+			console.log(word + "is a plaindrome");
+		} else{
+			console.log(word + "is not a palindrome");
+		}
+
+	</script>
+
+</body>
+</html>
